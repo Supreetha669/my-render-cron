@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: my-cron-job
+    runtime: python
+    schedule: "*/5 * * * *"
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
