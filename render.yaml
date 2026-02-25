@@ -1,7 +1,6 @@
 services:
-  - type: cron
-    name: my-cron-job
+  - type: web
+    name: my-cron-webservice
     runtime: python
-    schedule: "*/5 * * * *"
     buildCommand: pip install -r requirements.txt
     startCommand: python main.py
